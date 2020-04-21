@@ -11,7 +11,7 @@ go build
 
 ### To run the tests
 ```editorconfig
-go test
+go test ./...
 ``` 
 
 ### To deploy on sloppy.io
