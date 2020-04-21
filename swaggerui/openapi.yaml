@@ -13,7 +13,7 @@ info:
     email: ''
   license:
     name: MIT
-    url: WDB111111ZZZ22222
+    url: http://localhost:3333/
 tags: []
 paths:
   '/api/car/{carId}':
@@ -30,7 +30,7 @@ paths:
           required: true
           schema:
             type: string
-            default: WDB111111ZZZ22222
+            default: 1234567890ABCD1234
       responses:
         '200':
           description: Successful car status

@@ -1,5 +1,8 @@
 
-GET https://api.mercedes-benz.com/vehicledata_tryout/v1/vehicles/WDB111111ZZZ22222/containers/vehiclestatus
-Authorization: Bearer 4c4c444c-v123-4123-s123-4c4c444c4c44
+# curl -X GET "https://api.mercedes-benz.com/experimental/connectedvehicle_tryout/v1/vehicles/1234567890ABCD1234/doors" -H "accept: application/json" -H "authorization: Bearer a1b2c3d4-a1b2-a1b2-a1b2-a1b2c3d4e5f6"
+GET https://api.mercedes-benz.com/experimental/connectedvehicle_tryout/v1/vehicles/1234567890ABCD1234/doors
+accept: application/json
+authorization: Bearer a1b2c3d4-a1b2-a1b2-a1b2-a1b2c3d4e5f6
 
 ###
+
