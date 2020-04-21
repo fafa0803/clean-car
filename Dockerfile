@@ -1,6 +1,7 @@
 FROM golang:alpine as builder
 
 ENV GO111MODULE=on
+ENV CGO_ENABLED 0
 
 RUN apk add --no-cache git
 
@@ -9,6 +10,8 @@ RUN mkdir -p /opt/app
 WORKDIR /opt/app
 
 COPY . /opt/app/
+
+RUN go test ./...
 
 RUN go build
 
