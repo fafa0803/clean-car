@@ -13,7 +13,7 @@ info:
     email: ''
   license:
     name: MIT
-    url: http://localhost:3333/
+    url: https://github.com/vbasem/clean-car/blob/master/LICENSE
 tags: []
 paths:
   '/api/car/{carId}':
@@ -30,7 +30,7 @@ paths:
           required: true
           schema:
             type: string
-            default: 1234567890ABCD1234
+            default: WDB111111ZZZ22222
       responses:
         '200':
           description: Successful car status
