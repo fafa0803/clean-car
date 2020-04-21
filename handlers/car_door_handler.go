@@ -59,6 +59,7 @@ func getMyCars(w http.ResponseWriter, r *http.Request, token *oauth2.Token) {
 
 	w.Header().Set("Content-Type", "application/json")
 	log.Printf("got cars %v", car)
+	log.Printf("car id used: %v", car[0].Id)
 	getMyDoors(w, r, token, car[0].Id)
 }
 
