@@ -13,7 +13,7 @@ info:
     email: ''
   license:
     name: MIT
-    url: WDB111111ZZZ22222
+    url: https://github.com/vbasem/clean-car/blob/master/LICENSE
 tags: []
 paths:
   '/api/car/{carId}':

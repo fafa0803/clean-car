@@ -56,7 +56,7 @@ func TestGetCarStatus_badCarId(t *testing.T) {
 }
 
 func TestGetCarStatus_validCarId(t *testing.T) {
-	req, err := http.NewRequest("GET", "/api/car/WDB111111ZZZ22222", nil)
+	req, err := http.NewRequest("GET", "/api/car/1234567890ABCD1234", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
