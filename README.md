@@ -14,6 +14,11 @@ go build
 go test
 ``` 
 
+### To run locally
+```editorconfig
+go run main.go
+```
+
 ### To deploy on sloppy.io
 1. create an account under sloppy.io
 2. in travis set ```SLOPPY_APITOKEN``` env variable 
