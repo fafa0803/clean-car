@@ -21,6 +21,7 @@ go test ./...
 4. in travis set ```DOCKER_IMAGE``` which is the docker image name for the app
 5. in travis set ```DOMAIN``` which is the sloppy domain name or an external one if you have any
 
+> **_NOTE:_**  sloppy.io is free for 14 days. Its nice if you plan a demo!
 
 ### mercedes account 
 1. register for an account here https://me.secure.mercedes-benz.com
