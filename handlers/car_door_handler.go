@@ -30,6 +30,7 @@ func getMyCars(w http.ResponseWriter, r *http.Request, token *oauth2.Token) {
 		nil)
 
 	request.Header.Set("Authorization", "Bearer "+token.AccessToken)
+	log.Printf("%s %s %s\n", request.RemoteAddr, request.Method, request.URL)
 
 	client := &http.Client{}
 	response, err := client.Do(request)
@@ -48,6 +49,7 @@ func getMyCars(w http.ResponseWriter, r *http.Request, token *oauth2.Token) {
 		return
 	}
 
+	log.Printf("got: %s", body)
 	var car []car.Car
 	err = json.Unmarshal(body, &car)
 
