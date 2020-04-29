@@ -22,7 +22,7 @@ func (CarStatus *CarStatus) GetCarStatus(w http.ResponseWriter, r *http.Request)
 
 	response, err := CarStatus.Gateway.GetCarStatus(carId)
 
-	if err != nil {
+	if err == nil {
 		log.Printf("something went wrong with the GET car: %s", err)
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
